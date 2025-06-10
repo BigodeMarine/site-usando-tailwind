@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet&Style</title>
+    <link href="src/output.css" rel="stylesheet">
+</head>
+<!-- NAV BAR -->
+
+<body class="font-sans text-blue-500">
+    <header class="bg-green-600 shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold text-blue-200">Pet&Style</h1>
+            <button id="menu-toggle" class="text-blue-700 text-3xl md:hidden">&#9776;</button>
+            <nav class="hidden md:flex space-x-4">
+                <a href="#hero" class="text-blue-200 hover:text-white">Ínicio</a>
+                <a href="#produtos" class="text-blue-200 hover:text-white">Produtos</a>
+                <a href="#depoimentos" class="text-blue-200 hover:text-white">Depoimentos</a>
+                <a href="#contato" class="text-blue-200 hover:text-white">Contato</a>
+            </nav>
+        </div>
+        <!-- CONFIG HAMBURGUER -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+            <a href="#hero" class="block text-blue-200 hover:text-white mb-2">Início</a>
+            <a href="#produtos" class="block text-blue-200 hover:text-white mb-2">Produtos</a>
+            <a href="#depoimentos" class="block text-blue-200 hover:text-white mb-2">Depoimentos</a>
+            <a href="#contato" class="block text-blue-200 hover:text-white">Contato</a>
+        </div>
+    </header>
+
+    <section class="bg-blue-50 py-10">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-8 px-4">
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl font-extrabold mb-4 text-green-700">Tudo para o seu pet com muito carinho!</h2>
+                <p class="text-lg font-bold text-blue-600">A loja mais fofa da cidade. Caminhas, brinquedos e muito
+                    mais.</p>
+            </div>
+            <img src="imagens/imagemloja.jpg" alt="cachorro do dono da petshop"
+                class="rounded-xl shadow-lg w-full md:w-1/2">
+        </div>
+    </section>
+
+    <section class="py-10 bg-green-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-blue-600 mb-8">Nossos Produtos</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- CARD1 -->
+                <div class="bg-green-600 p-4 rounded-lg shadow hover:shadow-lg transition">
+                    <img src="imagens/caminha.jpg" alt="Caminha" class="mb-4 rounded">
+                    <h4 class="font-semibold text-lg text-blue-200">Caminha Conforto</h4>
+                    <p class="text-blue-200">Feita com tecido antialérgico. Ideal para cães pequenos.</p>
+                    <span class="block text-blue-200 font-bold mt-2">R$ 129,90</span>
+                </div>
+                <!-- CARD2 -->
+                <div class="bg-green-600 p-4 rounded-lg shadow hover:shadow-lg transition">
+                    <img src="imagens/mordedor.jpg" alt="brinquedo mordedor" class="mb-4 rounded">
+                    <h4 class="font-semibold text-lg text-blue-200">Brinquedo Mordedor</h4>
+                    <p class="text-blue-200">Ideal para pets ativos e filhotes.</p>
+                    <span class="block text-blue-200 font-bold mt-2">R$ 39,90</span>
+                </div>
+                <!-- CARD3 -->
+                <div class="bg-green-600 p-4 rounded-lg shadow hover:shadow-lg transition">
+                    <img src="imagens/coleira.jpg" alt="Coleira Estilosa" class="mb-4 rounded">
+                    <h4 class="font-semibold text-lg text-blue-200">Coleira Estilosa</h4>
+                    <p class="text-blue-200">Diversas cores e tamanhos disponíveis.</p>
+                    <span class="block text-blue-200 font-bold mt-2">R$ 59,90</span>
+                </div>
+                <!-- CARD4 -->
+                <div class="bg-green-600 p-4 rounded-lg shadow hover:shadow-lg transition">
+                    <img src="imagens/racao.jpg" alt="Ração Premium" class="mb-4 rounded">
+                    <h4 class="font-semibold text-lg text-blue-200">Ração Premium</h4>
+                    <p class="text-blue-200">Alimentação completa e balanceada.</p>
+                    <span class="block text-blue-200 font-bold mt-2">R$ 89,90</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue-50 py-10">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold text-green-600 mb-8">O que nossos clientes dizem</h3>
+            <!-- DEPOIMENTOS -->
+            <div class="space-y-6 max-w-2x1 mx-auto">
+                <p class="italic text-green-600">“Minha cachorrinha ama a caminha nova! Atendimento excelente.”
+                    <strong>Ana Clara</strong></p>
+                <p class="italic text-green-600">“Produtos de qualidade e entrega super rápida!” <strong>João
+                        Pedro</strong></p>
+                <p class="italic text-green-600">“Sempre encontro novidades incríveis para meu gato.” <strong>Mariana
+                        Silva</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="py-10 bg-green-50">
+        <div class="container mx-auto px-4 max-w-xl">
+            <h3 class="text-3xl font-bold text-blue-600 text-center mb-8">Entre em Contato</h3>
+            <div class="space-y-4 text-center text-blue-600">
+                <p>Email: pet&style@gmail.com</p>
+                <p>Telefone: (11) 4002-8922</p>
+            </div>
+
+            <form class="mt-6 space-y-4">
+                <input type="text" placeholder="Seu Nome" class="w-full p-2 border border-gray-400 rounded" required>
+                <input type="email" placeholder="Seu Email" class="w-full p-2 border border-gray-400 rounded" required>
+                <textarea rows="4" placeholder="Sua Mensagem" class="w-full p-2 border border-gray-400 rounded" required></textarea>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-green-600 text-center text-blue-200 py-4">
+        <p>&copy; 2025 Pet&Style. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
